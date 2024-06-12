@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.about-img {
+  width: 400px;
+  display: inline;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.text-container {
+  border-top: 3px solid #0d6efd;
+  border-left: 3px solid #0d6efd;
+  padding: 14px;
+  box-shadow: 6px 4px 5px rgb(246, 242, 242);
+  border-radius: 6px;
+}
+
+.main-con {
+  display: flex;
+}
+
+/* admission  */
+.admission-con {
+  border: 3px solid #0d6efd;
+  border-radius: 6px;
+  padding: 30px;
+}
+.admission-con:hover {
+  box-shadow: 12px 12px 12px rgb(230, 227, 227);
+}
+
+/* card */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.card-border {
+  border: 3px solid #0d6efd;
+  padding: 30px;
+  border-radius: 6px;
+}
+/* card end  */
+
+
+/* start Testimonial */
+
+.home-testimonial {
+  height: 380px;
+}
+.home-testimonial-bottom {
+  background-color: #f8f8f8;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  position: relative;
+  height: 130px;
+  top: 190px;
+}
+.home-testimonial h3 {
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.home-testimonial h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+.testimonial-inner {
+  position: relative;
+  top: -174px;
+}
+.testimonial-pos {
+  position: relative;
+  top: 24px;
+}
+.testimonial-inner .tour-desc {
+  border-radius: 5px;
+  padding: 40px;
+}
+.color-grey-3 {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 20px;
+  color: #6c83a2;
+}
+.testimonial-inner img.tm-people {
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: none;
+}
+.link-name {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  color: #6c83a2;
+}
+.link-position {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 12px;
+  color: #6c83a2;
+}
+.Testimonials-border{
+    border: 3px solid #0d6efd;
+    padding: 30px;
+    border-radius: 6px;
+}
+/* end Testimonials */
+
+/* Start Download  */
+.dwn-container {
+  background-color: #2d2f93;
+  color: white;
+}
+.dwn-sub{
+    display: flex;
+}
+
+
+/* phone and tab */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .main-con, .tas-container, .dwn-sub {
+    flex-direction: column;
+  }
+  .about-img {
+    width: 100%;
+  }
+  /* card */
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  
+}    
+
+/* Just phone  */
+@media screen and (max-width: 576px) {
+  .main-con, .dwn-sub {
+    flex-direction: column;
+  }
+  .about-img, .dwn-img {
+    width: 100%;
+  }
+  /* card */
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
